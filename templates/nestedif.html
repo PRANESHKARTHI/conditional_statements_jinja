@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NestedIf</title>
+    </head>
+    <body>
+        <center>
+            <h1>Nested If</h1>
+            {% if  a > b %}
+                {% if a > c %}    
+                    <h1>A is Higher</h1>
+                {% else %}
+                    <h1>C is Higher</h1>
+                {% endif %}
+            {% else %}
+                {% if b > c %}    
+                    <h1>B is Higher</h1>
+                {% else %}
+                    <h1>C is Higher</h1>
+                {% endif %}
+            {% endif %}
+        </center>
+    </body>
+</html>
